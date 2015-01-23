@@ -117,3 +117,10 @@ set hlsearch
 set laststatus=2
 " カーソルが何行目の何列目に置かれているかを表示する
 set ruler
+
+" --------------------------------------------------
+" その他
+" --------------------------------------------------
+
+" .mdをmarkdownとして認識させる
+autocmd BufNewFile,BufRead *.md set filetype=markdown
