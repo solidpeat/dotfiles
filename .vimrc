@@ -50,6 +50,18 @@ syntax on
 set t_Co=256
 colorscheme molokai
 
+" .mdをmarkdownとして認識させる
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+" markdown内のコードをハイライト
+let g:markdown_fenced_languages = [
+\  'html',
+\  'css',
+\  'sass',
+\  'javascript',
+\  'coffee',
+\  'php',
+\]
+
 " --------------------------------------------------
 " 移動
 " --------------------------------------------------
@@ -117,10 +129,3 @@ set hlsearch
 set laststatus=2
 " カーソルが何行目の何列目に置かれているかを表示する
 set ruler
-
-" --------------------------------------------------
-" その他
-" --------------------------------------------------
-
-" .mdをmarkdownとして認識させる
-autocmd BufNewFile,BufRead *.md set filetype=markdown
