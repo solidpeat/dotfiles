@@ -1,0 +1,27 @@
+" --------------------------------------------------
+" プラグインの設定
+" --------------------------------------------------
+
+" nerdtree
+" -------------------------
+
+" 隠しファイルを表示
+let g:NERDTreeShowHidden = 1
+
+" 引数なしで実行したとき、NERDTreeを実行する
+autocmd StdinReadPre * let s:std_in = 1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" 開閉のショートカットキー
+noremap <C-e> :NERDTreeToggle<CR>
+
+" vim-indent-guides
+" -------------------------
+
+" vimの起動時に有効化
+let g:indent_guides_enable_on_vim_startup = 1
+
+" ガイドの色
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg = 234
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg = 236
