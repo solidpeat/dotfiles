@@ -98,6 +98,8 @@ set expandtab
 set tabstop=2
 " 自動的にインデントされる幅
 set shiftwidth=2
+" Tabを押下した際の空白の数（バックスペースで消す数に影響する）
+set softtabstop=2
 " 新しい行を作ったときに高度な自動インデントを行う
 set smartindent
 
