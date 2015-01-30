@@ -39,6 +39,8 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'kchmck/vim-coffee-script'
 " Jadeのsyntax highlight
 NeoBundle 'digitaltoad/vim-jade'
+" 日本語ドキュメント
+NeoBundle 'vim-jp/vimdoc-ja'
 
 " --------------------------------------------------
 " from vim-scripts
