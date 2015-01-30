@@ -15,6 +15,16 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " 開閉のショートカットキー
 noremap <C-e> :NERDTreeToggle<CR>
 
+" tcomment_vim
+" -------------------------
+
+" デフォルトのキーマッピングを無効化
+let tcommentMaps = 0
+
+nmap <Leader>c  <Plug>TComment_<c-_><c-_>
+vmap <Leader>c  <Plug>TComment_<c-_><c-_>
+vmap <Leader>C  <Plug>TComment_<c-_>b
+
 " vim-indent-guides
 " -------------------------
 
