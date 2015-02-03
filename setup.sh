@@ -18,6 +18,7 @@ require git
 # dotfilesのリポジトリをクローン
 if ! [ -d $DOTFILESDIR ]; then
   git clone https://github.com/solidpeat/dotfiles.git $DOTFILESDIR
+  cd $DOTFILESDIR
   git submodule update --init
 fi
 
