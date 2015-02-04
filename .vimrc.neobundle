@@ -33,6 +33,8 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 " なんかすごそうなやつ
 NeoBundle 'Shougo/unite.vim'
+" 補完
+NeoBundle 'Shougo/neocomplete.vim'
 " molokai カラースキーム
 NeoBundle 'tomasr/molokai'
 " CoffeeScriptのsyntax highlight
