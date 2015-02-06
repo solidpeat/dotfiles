@@ -73,9 +73,8 @@ nnoremap <Down> gj
 nnoremap <Up>   gk
 
 " 0, 1, 9で行頭、行末へ
-nmap 1 0
-nmap 0 ^
-nmap 9 $
+nnoremap 0 ^
+nnoremap 9 $
 
 " insert mode での移動
 inoremap <C-e> <END>
