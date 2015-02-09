@@ -124,6 +124,8 @@ set ignorecase
 set smartcase
 " 検索文字をハイライト
 set hlsearch
+" grep後自動でquickfix-windowを開く
+autocmd QuickFixCmdPost *grep* cwindow
 
 " --------------------------------------------------
 " ステータスライン
