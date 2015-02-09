@@ -13,6 +13,7 @@ brew install git
 brew install hub
 brew install tig
 brew install git-flow
+brew install mercurial
 brew install gibo # .gitignore boilerplates
 brew install tree
 brew install android-sdk
