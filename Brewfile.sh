@@ -34,6 +34,7 @@ brew cask install coteditor
 brew cask install unity
 brew cask install unity-web-player
 brew cask install coda
+brew cask install mamp
 brew cask install sequel-pro
 
 brew cask install dropbox
