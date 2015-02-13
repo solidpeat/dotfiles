@@ -51,3 +51,31 @@ inoremap <expr><C-j> pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr><C-k> pumvisible() ? "\<C-p>" : "\<Up>"
 " 補完候補が出ていたら確定
 inoremap <expr><CR> pumvisible() ? neocomplete#close_popup() : "\<CR>"
+
+" Enable heavy omni completion.
+" 何かよくわからんけんけど、これがないとOmniSharpで自動で補完されない
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
+endif
+let g:neocomplete#sources#omni#input_patterns.cs = '.*[^=\);]'
+
+" omnisharp-vim
+" -------------------------
+
+" タイムアウト時間を長めに（しないとFindUsagesでnot foundになる）
+let g:OmniSharp_timeout = 10
+" プレビューウィンドウを下部に
+set splitbelow
+
+augroup omnisharp_commands
+  autocmd!
+  " オムニ補完（公式の例ではsetlocalだったが、そうすると1つ目のファイルで効かない）
+  autocmd FileType cs set omnifunc=OmniSharp#Complete
+  " 定義元へジャンプ
+  autocmd FileType cs nnoremap gd :OmniSharpGotoDefinition<cr>
+  " 参照元を検索
+  autocmd FileType cs nnoremap <leader>fu :OmniSharpFindUsages<cr>
+  " メソッド・プロパティ単位で移動
+  autocmd FileType cs nnoremap <C-k> :OmniSharpNavigateUp<cr>
+  autocmd FileType cs nnoremap <C-j> :OmniSharpNavigateDown<cr>
+augroup END

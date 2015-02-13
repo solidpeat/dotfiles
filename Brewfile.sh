@@ -17,6 +17,7 @@ brew install mercurial
 brew install gibo # .gitignore boilerplates
 brew install tree
 brew install android-sdk
+brew install mono
 
 # homebrew-caskのインストール
 brew tap caskroom/cask

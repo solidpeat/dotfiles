@@ -43,6 +43,17 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'digitaltoad/vim-jade'
 " 日本語ドキュメント
 NeoBundle 'vim-jp/vimdoc-ja'
+" IntelliSense
+NeoBundleLazy 'OmniSharp/omnisharp-vim', {
+\   'autoload': {'filetypes': ['cs']},
+\   'build': {
+\     'windows': 'msbuild server/OmniSharp.sln',
+\     'mac'    : 'xbuild server/OmniSharp.sln',
+\     'unix'   : 'xbuild server/OmniSharp.sln',
+\   }
+\ }
+" OmniSharp用の非同期処理
+NeoBundle 'tpope/vim-dispatch'
 
 " --------------------------------------------------
 " from vim-scripts

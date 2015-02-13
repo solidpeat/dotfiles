@@ -15,6 +15,8 @@ colors
 
 # homebrew-cask用
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+# Mono用
+export MONO_GAC_PREFIX="/usr/local"
 
 # --------------------------------------------------
 # プロンプト
