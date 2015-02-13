@@ -54,6 +54,8 @@ NeoBundleLazy 'OmniSharp/omnisharp-vim', {
 \ }
 " OmniSharp用の非同期処理
 NeoBundle 'tpope/vim-dispatch'
+" シンタックスチェック
+NeoBundle 'scrooloose/syntastic'
 
 " --------------------------------------------------
 " from vim-scripts

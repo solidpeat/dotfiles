@@ -79,3 +79,13 @@ augroup omnisharp_commands
   autocmd FileType cs nnoremap <C-k> :OmniSharpNavigateUp<cr>
   autocmd FileType cs nnoremap <C-j> :OmniSharpNavigateDown<cr>
 augroup END
+
+" syntastic
+" -------------------------
+
+" ファイルを開くタイミングでチェック
+let g:syntastic_check_on_open = 1
+" エラー時にウィンドウを開く
+let g:syntastic_auto_loc_list = 1
+" エラーがあるとエラー箇所へカーソル移動
+let g:syntastic_auto_jump = 1
