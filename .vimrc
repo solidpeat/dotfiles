@@ -124,6 +124,8 @@ set ignorecase
 set smartcase
 " 検索文字をハイライト
 set hlsearch
+" Escの2回押しでハイライト解除
+nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
 " grep後自動でquickfix-windowを開く
 autocmd QuickFixCmdPost *grep* cwindow
 
