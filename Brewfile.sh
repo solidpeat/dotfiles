@@ -18,6 +18,7 @@ brew install gibo # .gitignore boilerplates
 brew install tree
 brew install android-sdk
 brew install mono
+brew install plantuml
 
 # homebrew-caskのインストール
 brew tap caskroom/cask
