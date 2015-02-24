@@ -41,6 +41,8 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'kchmck/vim-coffee-script'
 " Jadeのsyntax highlight
 NeoBundle 'digitaltoad/vim-jade'
+" Markdownのsyntax highlightと折りたたみなど
+NeoBundle 'plasticboy/vim-markdown'
 " PlantUMLのsyntax highlight
 NeoBundle 'aklt/plantuml-syntax'
 " 日本語ドキュメント

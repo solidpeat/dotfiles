@@ -59,6 +59,15 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
 endif
 let g:neocomplete#sources#omni#input_patterns.cs = '.*[^=\);]'
 
+" vim-markdown
+" -------------------------
+
+" デフォルトのキーマッピングを無効化
+let g:vim_markdown_no_default_key_mappings=1
+" 見出し単位で移動
+autocmd FileType markdown nmap <C-j> <Plug>(Markdown_MoveToNextHeader)
+autocmd FileType markdown nmap <C-k> <Plug>(Markdown_MoveToPreviousHeader)
+
 " omnisharp-vim
 " -------------------------
 
