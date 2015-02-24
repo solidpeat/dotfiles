@@ -9,3 +9,7 @@
   lgl = log --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %C(green)%ci(%cr)%Creset %C(blue bold)<%cn>%Creset%n%n%w(80, 2)%C(white reverse)%s%Creset%n%n%w(80, 2, 2)%b' --name-status
   lgs = log --pretty=format:'%C(yellow reverse)%h%Creset -%C(red)%d%Creset %s %C(green)%ci(%cr)%Creset %C(blue bold)<%cn>%Creset'
   ls = ls-files
+[pager]
+  log = diff-highlight | less
+  show = diff-highlight | less
+  diff = diff-highlight | less

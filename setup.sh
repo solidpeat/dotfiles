@@ -45,3 +45,5 @@ dotalias .zshrc
 dotalias .zshenv
 dotalias .tmux.conf
 dotalias .gitconfig
+# diff-highlightへのシンボリックリンク
+ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin
