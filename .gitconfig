@@ -15,3 +15,5 @@
   diff = diff-highlight | less
 [core]
   editor = vim
+[push]
+  default = simple
