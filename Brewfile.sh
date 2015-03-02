@@ -19,6 +19,7 @@ brew install tree
 brew install android-sdk
 brew install mono
 brew install plantuml
+brew install jq
 
 # homebrew-caskのインストール
 brew tap caskroom/cask
