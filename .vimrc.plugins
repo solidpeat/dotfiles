@@ -67,6 +67,9 @@ let g:vim_markdown_no_default_key_mappings=1
 " 見出し単位で移動
 autocmd FileType markdown nmap <C-j> <Plug>(Markdown_MoveToNextHeader)
 autocmd FileType markdown nmap <C-k> <Plug>(Markdown_MoveToPreviousHeader)
+" 折りたたみを開閉
+autocmd FileType markdown nnoremap <Leader>mo :set nofoldenable<cr>
+autocmd FileType markdown nnoremap <Leader>mc :set foldenable<cr>
 
 " omnisharp-vim
 " -------------------------
