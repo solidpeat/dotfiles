@@ -13,7 +13,7 @@ autocmd StdinReadPre * let s:std_in = 1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " 開閉のショートカットキー
-noremap <C-e> :NERDTreeToggle<CR>
+noremap <C-e> :<C-u>NERDTreeToggle<CR>
 
 " tcomment_vim
 " -------------------------
@@ -74,8 +74,8 @@ let g:vim_markdown_no_default_key_mappings=1
 autocmd FileType markdown nmap <C-j> <Plug>(Markdown_MoveToNextHeader)
 autocmd FileType markdown nmap <C-k> <Plug>(Markdown_MoveToPreviousHeader)
 " 折りたたみを開閉
-autocmd FileType markdown nnoremap <Leader>mo :set nofoldenable<cr>
-autocmd FileType markdown nnoremap <Leader>mc :set foldenable<cr>
+autocmd FileType markdown nnoremap <Leader>mo :<C-u>set nofoldenable<cr>
+autocmd FileType markdown nnoremap <Leader>mc :<C-u>set foldenable<cr>
 
 " omnisharp-vim
 " -------------------------
@@ -90,12 +90,12 @@ augroup omnisharp_commands
   " オムニ補完（公式の例ではsetlocalだったが、そうすると1つ目のファイルで効かない）
   autocmd FileType cs set omnifunc=OmniSharp#Complete
   " 定義元へジャンプ
-  autocmd FileType cs nnoremap gd :OmniSharpGotoDefinition<cr>
+  autocmd FileType cs nnoremap gd :<C-u>OmniSharpGotoDefinition<cr>
   " 参照元を検索
-  autocmd FileType cs nnoremap <leader>fu :OmniSharpFindUsages<cr>
+  autocmd FileType cs nnoremap <leader>fu :<C-u>OmniSharpFindUsages<cr>
   " メソッド・プロパティ単位で移動
-  autocmd FileType cs nnoremap <C-k> :OmniSharpNavigateUp<cr>
-  autocmd FileType cs nnoremap <C-j> :OmniSharpNavigateDown<cr>
+  autocmd FileType cs nnoremap <C-k> :<C-u>OmniSharpNavigateUp<cr>
+  autocmd FileType cs nnoremap <C-j> :<C-u>OmniSharpNavigateDown<cr>
 augroup END
 
 " syntastic
