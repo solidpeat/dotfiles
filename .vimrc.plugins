@@ -59,6 +59,12 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
 endif
 let g:neocomplete#sources#omni#input_patterns.cs = '.*[^=\);]'
 
+" vim-easy-align
+" -------------------------
+
+" キーマッピング
+vmap <Enter> <Plug>(EasyAlign)
+
 " vim-markdown
 " -------------------------
 
