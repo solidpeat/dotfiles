@@ -62,6 +62,12 @@ NeoBundleLazy 'OmniSharp/omnisharp-vim', {
 NeoBundle 'tpope/vim-dispatch'
 " シンタックスチェック
 NeoBundle 'scrooloose/syntastic'
+" Twitterクライアント
+NeoBundle 'basyura/TweetVim'
+" TwitterAPI（TweetVimのために必要）
+NeoBundle 'basyura/twibill.vim'
+" たぶんブラウザを開くんやろう（TweetVimのために必要）
+NeoBundle 'tyru/open-browser.vim'
 
 " --------------------------------------------------
 " from vim-scripts
