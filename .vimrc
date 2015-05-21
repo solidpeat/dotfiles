@@ -43,6 +43,9 @@ augroup END
 " カーソル行をハイライト
 set cursorline
 
+" 80文字目に線を表示
+set colorcolumn=80
+
 " シンタックスハイライト
 syntax on
 
