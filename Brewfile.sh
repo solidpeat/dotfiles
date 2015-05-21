@@ -20,6 +20,7 @@ brew install android-sdk
 brew install mono
 brew install plantuml
 brew install jq
+brew install mysql
 
 # homebrew-caskのインストール
 brew tap caskroom/cask
