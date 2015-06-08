@@ -70,6 +70,24 @@ let g:markdown_fenced_languages = [
 " .applescriptをAppleScriptとして認識させる
 autocmd BufNewFile,BufReadPost *.applescript set filetype=applescript
 
+" C#のregionで折りたたみ
+" csharp.vim - C# Syntax file : vim online
+" http://www.vim.org/scripts/script.php?script_id=116
+function! CSharpFoldText(add)
+  let line = getline(v:foldstart + a:add)
+  let sub = substitute(line, '#region\s', '', 'i')
+  let ts = &tabstop
+  let text = ""
+  while (l:ts > 0)
+    let text = text . v:folddashes[0]
+    let ts = ts - 1
+  endwhile
+  return substitute(sub, "\t", text, "g")
+endfunction
+autocmd FileType cs setlocal foldmethod=syntax
+autocmd FileType cs setlocal foldcolumn=2
+autocmd FileType cs setlocal foldtext=CSharpFoldText(0)
+
 " --------------------------------------------------
 " 移動
 " --------------------------------------------------
