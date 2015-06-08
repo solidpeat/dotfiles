@@ -67,6 +67,9 @@ let g:markdown_fenced_languages = [
 \  'php',
 \]
 
+" .applescriptをAppleScriptとして認識させる
+autocmd BufNewFile,BufReadPost *.applescript set filetype=applescript
+
 " --------------------------------------------------
 " 移動
 " --------------------------------------------------
