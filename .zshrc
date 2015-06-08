@@ -13,6 +13,8 @@ compinit
 autoload -Uz colors
 colors
 
+# homebrew用
+export PATH="/usr/local/sbin:$PATH"
 # homebrew-cask用
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Mono用
