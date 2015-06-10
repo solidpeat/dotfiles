@@ -59,3 +59,11 @@ brew tap sanemat/font
 brew install ricty
 brew tap caskroom/fonts
 brew cask install font-source-code-pro
+
+# MacVim-KaoriYaのインストール
+# Building · splhack/macvim-kaoriya Wiki
+# https://github.com/splhack/macvim-kaoriya/wiki/Building
+brew tap splhack/homebrew-splhack
+brew install gettext-mk lua lua51 luajit python3 ruby
+brew install --HEAD macvim-kaoriya
+brew linkapps macvim-kaoriya

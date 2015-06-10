@@ -15,6 +15,10 @@ colors
 
 # homebrew用
 export PATH="/usr/local/sbin:$PATH"
+# MacVim-KaoriYa用
+export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
+alias vim=Vim
+alias vi=vim
 # homebrew-cask用
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Mono用
