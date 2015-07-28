@@ -5,12 +5,14 @@ source ~/dotfiles/.vimrc.neobundle
 " 基本設定
 " --------------------------------------------------
 
-" 読み込み時の文字コード（左から順番に判定）
-set fileencodings=utf-8,sjis,euc-jp,latin1
 " スクロール時の余白確保
 set scrolloff=5
 " スワップファイル作らない
 set noswapfile
+" バックアップファイルを作らない
+set nobackup
+" undoファイルを作らない
+set noundofile
 " カーソルを行頭、行末で止まらないようにする
 set whichwrap=b,s,h,l,<,>,[,]
 " コマンドをステータス行に表示(ciとかのやつ)
