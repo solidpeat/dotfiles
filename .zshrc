@@ -31,3 +31,12 @@ export MONO_GAC_PREFIX="/usr/local"
 PROMPT="
 %{${fg[green]}%}[%n@%m] %~%{${reset_color}%}
 %{${fg[green]}%}%# %{${reset_color}%}"
+
+# --------------------------------------------------
+# コマンド
+# --------------------------------------------------
+
+# カレントディレクトリをUnityプロジェクトとして開く
+# MacOSX - Macのターミナルからunityを起動する - Qiita
+# http://qiita.com/kesera/items/67169850d3e58f0e3d40
+alias unity='/Applications/Unity/Unity.app/Contents/MacOS/Unity -projectPath "`pwd`" &'
