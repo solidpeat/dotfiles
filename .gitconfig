@@ -10,9 +10,10 @@
   lgs = log --pretty=format:'%C(yellow reverse)%h%Creset -%C(red)%d%Creset %s %C(green)%ci(%cr)%Creset %C(blue bold)<%cn>%Creset'
   ls = ls-files
 [pager]
-  log = diff-highlight | less
-  show = diff-highlight | less
-  diff = diff-highlight | less
+  log = diff-highlight | less -x2
+  show = diff-highlight | less -x2
+  diff = diff-highlight | less -x2
+  blame = diff-highlight | less -x2
 [core]
   editor = vim
 [push]
