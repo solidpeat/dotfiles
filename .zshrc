@@ -23,6 +23,9 @@ alias vi=vim
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Mono用
 export MONO_GAC_PREFIX="/usr/local"
+# DNVM用
+source dnvm.sh
+export MONO_MANAGED_WATCHER=disabled
 
 # --------------------------------------------------
 # プロンプト

@@ -67,3 +67,7 @@ brew tap splhack/homebrew-splhack
 brew install gettext-mk lua lua51 luajit python3 ruby
 brew install --HEAD macvim-kaoriya
 brew linkapps macvim-kaoriya
+
+# ASP.NET環境
+brew tap aspnet/dnx
+brew install dnvm
