@@ -26,6 +26,8 @@ export MONO_GAC_PREFIX="/usr/local"
 # DNVM用
 source dnvm.sh
 export MONO_MANAGED_WATCHER=disabled
+# Composer用
+export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # --------------------------------------------------
 # プロンプト
