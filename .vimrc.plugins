@@ -37,6 +37,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg = 234
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg = 236
 
 " neocomplete.vim
+" neosnippet.vim
 " -------------------------
 
 " vimの起動時に有効化
@@ -45,12 +46,13 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 
 " 補完候補を選択
-inoremap <expr><C-h> <Left>
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><C-j> pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr><C-k> pumvisible() ? "\<C-p>" : "\<Up>"
 " 補完候補が出ていたら確定
 inoremap <expr><CR> pumvisible() ? neocomplete#close_popup() : "\<CR>"
+" スニペットの展開とジャンプ
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\  "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " Enable heavy omni completion.
 " 何かよくわからんけんけど、これがないとOmniSharpで自動で補完されない
@@ -58,6 +60,12 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
 endif
 let g:neocomplete#sources#omni#input_patterns.cs = '.*[^=\);]'
+
+" For conceal markers.
+" あんまわからんけど、スニペットのジャンプ先の表示形式がシンプルになる
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
 
 " vim-easy-align
 " -------------------------

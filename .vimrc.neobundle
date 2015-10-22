@@ -35,6 +35,9 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Shougo/unite.vim'
 " 補完
 NeoBundle 'Shougo/neocomplete.vim'
+" スニペット
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
 " 整列
 NeoBundle 'junegunn/vim-easy-align'
 " molokai カラースキーム
