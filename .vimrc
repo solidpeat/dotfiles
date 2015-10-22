@@ -67,6 +67,7 @@ let g:markdown_fenced_languages = [
 \  'javascript',
 \  'coffee',
 \  'php',
+\  'cs',
 \]
 
 " .applescriptをAppleScriptとして認識させる
