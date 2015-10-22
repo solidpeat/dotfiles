@@ -41,6 +41,8 @@ brew cask install coda
 brew cask install mamp
 brew cask install sequel-pro
 brew cask install eclipse-java
+brew cask install virtualbox
+brew cask install vagrant
 
 brew cask install dropbox
 brew cask install skype
