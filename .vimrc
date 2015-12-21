@@ -91,6 +91,19 @@ autocmd FileType cs setlocal foldmethod=syntax
 autocmd FileType cs setlocal foldcolumn=2
 autocmd FileType cs setlocal foldtext=CSharpFoldText(0)
 
+" JSONの折りたたみ
+autocmd FileType json setlocal foldmethod=syntax
+autocmd FileType json setlocal foldlevel=2
+" jqの実行
+" VimでJsonを整形したい - koturnの日記
+" http://koturn.hatenablog.com/entry/2015/07/27/042519
+if executable('jq')
+  function! s:jq(...)
+    execute '%!jq' (a:0 == 0 ? '.' : a:1)
+  endfunction
+  command! -nargs=? Jq  call s:jq(<f-args>)
+endif
+
 " --------------------------------------------------
 " 移動
 " --------------------------------------------------
