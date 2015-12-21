@@ -1,5 +1,6 @@
 {
     "require": {
-        "fabpot/php-cs-fixer": "~1.10"
+        "fabpot/php-cs-fixer": "~1.10",
+        "squizlabs/php_codesniffer": "*"
     }
 }
