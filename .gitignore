@@ -1,6 +1,7 @@
 .vim/bundle
 .composer/vendor
 .composer/cache
+.zshrc.brew.github.api.token
 
 ### https://raw.github.com/github/gitignore/3aab1a12c33e89bb16dbb003dc329ecac7b74ae0/Global/Vim.gitignore
 

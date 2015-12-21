@@ -15,6 +15,9 @@ colors
 
 # homebrew用
 export PATH="/usr/local/sbin:$PATH"
+if [ -f ~/dotfiles/.zshrc.brew.github.api.token ]; then
+  source ~/dotfiles/.zshrc.brew.github.api.token
+fi
 # MacVim-KaoriYa用
 export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
 alias vim=Vim
