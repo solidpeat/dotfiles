@@ -27,7 +27,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Mono用
 export MONO_GAC_PREFIX="/usr/local"
 # DNVM用
-source dnvm.sh
+source ~/.dnx/dnvm/dnvm.sh
 export MONO_MANAGED_WATCHER=disabled
 # Composer用
 export PATH="$PATH:$HOME/.composer/vendor/bin"
