@@ -44,6 +44,7 @@ brew cask install rdm
 brew cask install eclipse-java
 brew cask install virtualbox
 brew cask install vagrant
+brew cask install qlmarkdown
 
 brew cask install dropbox
 brew cask install skype
