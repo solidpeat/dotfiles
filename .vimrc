@@ -133,23 +133,11 @@ inoremap jj <Esc>
 " 編集
 " --------------------------------------------------
 
-" タブの代わりに空白文字を挿入する
-autocmd BufNewFile,BufRead *[^{.cs}] set expandtab
-" ファイル内の <Tab> が対応する空白の数
-set tabstop=2
-" 自動的にインデントされる幅
-set shiftwidth=2
-" Tabを押下した際の空白の数（バックスペースで消す数に影響する）
-set softtabstop=2
 " 新しい行を作ったときに高度な自動インデントを行う
 set smartindent
 
-" 保存時に行末の空白を除去する
-autocmd BufWritePre *[^{.cs}] :%s/\s\+$//ge
 " 保存時にtabをスペースに変換する
-autocmd BufWritePre *[^{.cs}] :%s/\t/  /ge
-" 保存時に^Mを削除する
-autocmd BufWritePre *[^{.cs}] :%s///ge
+" autocmd BufWritePre *[^{.cs}] :%s/\t/  /ge
 
 " バックスペースキーでいろいろ削除
 set backspace=indent,eol,start

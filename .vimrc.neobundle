@@ -25,6 +25,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " from github
 " --------------------------------------------------
 
+" EditorConfig
+NeoBundle 'editorconfig/editorconfig-vim'
 " ツリー表示
 NeoBundle 'scrooloose/nerdtree'
 " コメント処理
