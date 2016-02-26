@@ -31,6 +31,16 @@ source ~/.dnx/dnvm/dnvm.sh
 export MONO_MANAGED_WATCHER=disabled
 # Composer用
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+# anyenv用
+if [ -d ${HOME}/.anyenv ]; then
+  export PATH="$HOME/.anyenv/bin:$PATH"
+  eval "$(anyenv init -)"
+  # tmuxでsystemが優先される問題の対処
+  for D in `ls $HOME/.anyenv/envs`
+  do
+    export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
+  done
+fi
 
 # --------------------------------------------------
 # プロンプト
