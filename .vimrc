@@ -94,6 +94,8 @@ autocmd FileType cs setlocal foldtext=CSharpFoldText(0)
 " JSONの折りたたみ
 autocmd FileType json setlocal foldmethod=syntax
 autocmd FileType json setlocal foldlevel=2
+" JSONのダブルクォーテーション非表示を無効化
+autocmd Filetype json setlocal conceallevel=0
 " jqの実行
 " VimでJsonを整形したい - koturnの日記
 " http://koturn.hatenablog.com/entry/2015/07/27/042519
