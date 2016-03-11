@@ -101,9 +101,13 @@ augroup omnisharp_commands
   autocmd FileType cs nnoremap gd :<C-u>OmniSharpGotoDefinition<cr>
   " 参照元を検索
   autocmd FileType cs nnoremap <leader>fu :<C-u>OmniSharpFindUsages<cr>
+  " 型情報表示
+  autocmd FileType cs nnoremap <leader>tl :<C-u>OmniSharpTypeLookup<cr>
   " メソッド・プロパティ単位で移動
   autocmd FileType cs nnoremap <C-k> :<C-u>OmniSharpNavigateUp<cr>
   autocmd FileType cs nnoremap <C-j> :<C-u>OmniSharpNavigateDown<cr>
+  " コード整形
+  autocmd FileType cs vnoremap = :<C-u>OmniSharpCodeFormat<cr>
 augroup END
 
 " syntastic
