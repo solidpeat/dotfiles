@@ -51,7 +51,6 @@ brew cask install skype
 brew cask install evernote
 brew cask install skitch
 brew cask install notational-velocity
-brew cask install bettertouchtool
 brew cask install clipmenu
 brew cask install appcleaner
 
