@@ -107,7 +107,7 @@ augroup omnisharp_commands
   autocmd FileType cs nnoremap <C-k> :<C-u>OmniSharpNavigateUp<cr>
   autocmd FileType cs nnoremap <C-j> :<C-u>OmniSharpNavigateDown<cr>
   " コード整形
-  autocmd FileType cs vnoremap = :<C-u>OmniSharpCodeFormat<cr>
+  autocmd FileType cs vnoremap <leader>= :<C-u>OmniSharpCodeFormat<cr>
 augroup END
 
 " syntastic
