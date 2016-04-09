@@ -42,6 +42,8 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 " 整列
 NeoBundle 'junegunn/vim-easy-align'
+" 検索位置表示
+NeoBundle 'osyo-manga/vim-anzu'
 " molokai カラースキーム
 NeoBundle 'tomasr/molokai'
 " CoffeeScriptのsyntax highlight
