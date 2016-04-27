@@ -17,6 +17,7 @@
   blame = diff-highlight | less -x2
 [core]
   editor = vim
+	excludesfile = ~/dotfiles/.gitignore_global
 [push]
   default = simple
 [merge]
