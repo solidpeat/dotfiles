@@ -34,7 +34,6 @@ brew cask install google-chrome
 brew cask install firefox-ja
 brew cask install thunderbird-ja
 
-brew cask install coteditor
 brew cask install unity
 brew cask install unity-web-player
 brew cask install coda
