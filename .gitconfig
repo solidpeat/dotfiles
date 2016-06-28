@@ -10,6 +10,7 @@
   lgs = log --pretty=format:'%C(yellow reverse)%h%Creset -%C(red)%d%Creset %s %C(green)%ci(%cr)%Creset %C(blue bold)<%cn>%Creset'
   ls = ls-files
   shows = show --stat
+  delete-merged-branches = !git branch --merged | grep -vE '\\*|master|develop' | xargs git branch -d
 [pager]
   log = diff-highlight | less -x2
   show = diff-highlight | less -x2
