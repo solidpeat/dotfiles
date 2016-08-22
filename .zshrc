@@ -18,6 +18,10 @@ export PATH="/usr/local/sbin:$PATH"
 if [ -f ~/dotfiles/.zshrc.brew.github.api.token ]; then
   source ~/dotfiles/.zshrc.brew.github.api.token
 fi
+# tmux上でmasを実行するためのエイリアス
+if [ "$TMUX" != "" ];then
+  alias mas="reattach-to-user-namespace mas"
+fi
 # MacVim-KaoriYa用
 export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
 alias vim=Vim

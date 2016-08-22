@@ -36,7 +36,9 @@ if [ "$ANS" != "y" ]; then
 fi
 
 # brew install
-sh $DOTFILESDIR/Brewfile.sh
+brew install rcmdnk/file/brew-file
+dotalias .brewfile
+brew file install
 
 # エイリアス作成
 dotalias .vim
