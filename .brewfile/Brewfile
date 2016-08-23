@@ -15,6 +15,7 @@ brew git-flow
 brew gibo
 brew mercurial
 # util
+brew mackup
 brew tree
 brew jq
 brew plantuml
