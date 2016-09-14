@@ -21,6 +21,8 @@ if ! [ -d $DOTFILESDIR ]; then
   cd $DOTFILESDIR
   # NeoBundle
   git submodule update --init
+  # remote-urlをSSHに変更
+  git remote set-url origin git@github.com:solidpeat/dotfiles.git
 fi
 
 # homebrewのインストール
