@@ -4,7 +4,6 @@ brew vim --with-luajit
 brew zsh --disable-etcdir
 brew tmux
 # develop
-brew android-sdk
 brew mono
 brew mysql
 # git
