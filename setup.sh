@@ -19,20 +19,20 @@ require git
 if ! [ -d $DOTFILESDIR ]; then
   git clone https://github.com/solidpeat/dotfiles.git $DOTFILESDIR
   cd $DOTFILESDIR
+  # NeoBundle
   git submodule update --init
 fi
 
 # homebrewのインストール
 if ! enabled brew; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
-brew doctor
-
-# brew doctorの結果を見てセットアップ作業を続けるか選択
-echo -n "continue ? [y/N] "
-read ANS
-if [ "$ANS" != "y" ]; then
-  exit 1
+  brew doctor
+  # brew doctorの結果を見てセットアップ作業を続けるか選択
+  echo -n "continue ? [y/N] "
+  read ANS
+  if [ "$ANS" != "y" ]; then
+    exit 1
+  fi
 fi
 
 # brew install
