@@ -55,7 +55,6 @@ cask font-source-code-pro
 
 tap homebrew/php
 brew composer
-brew php55
 brew wp-cli
 
 tap sanemat/font
