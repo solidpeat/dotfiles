@@ -144,6 +144,13 @@ set smartindent
 " バックスペースキーでいろいろ削除
 set backspace=indent,eol,start
 
+" ctags
+augroup ctagsSettings
+  autocmd!
+  autocmd FileType php set tags=./tags;
+  autocmd FileType php nnoremap gd g<C-]>
+augroup END
+
 " --------------------------------------------------
 " 検索
 " --------------------------------------------------
