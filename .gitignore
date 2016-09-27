@@ -1,4 +1,5 @@
 .vim/bundle
-.composer/vendor
-.composer/cache
+.composer/*
+!.composer/composer.json
+!.composer/composer.lock
 .zshrc.brew.github.api.token
