@@ -18,6 +18,7 @@ brew mackup
 brew tree
 brew jq
 brew plantuml
+brew reattach-to-user-namespace
 
 tap caskroom/cask
 # core
