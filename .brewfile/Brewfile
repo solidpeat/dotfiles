@@ -19,6 +19,7 @@ brew tree
 brew jq
 brew plantuml
 brew reattach-to-user-namespace
+brew re2c # phpenvのため
 
 tap caskroom/cask
 # core
@@ -57,6 +58,9 @@ cask font-source-code-pro
 tap homebrew/php
 brew composer
 brew wp-cli
+
+tap homebrew/versions
+brew bison27 # phpenvのため
 
 tap sanemat/font
 brew ricty --powerline
