@@ -30,9 +30,6 @@ alias vi=vim
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Mono用
 export MONO_GAC_PREFIX="/usr/local"
-# DNVM用
-source ~/.dnx/dnvm/dnvm.sh
-export MONO_MANAGED_WATCHER=disabled
 # AndroidSDK用
 export PATH="$PATH:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools"
 # Composer用
