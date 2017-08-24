@@ -88,6 +88,8 @@ nmap # <Plug>(anzu-sharp-with-echo)
 let g:vim_markdown_no_default_key_mappings=1
 " 折りたたみを無効化
 let g:vim_markdown_folding_disabled=1
+" 一部シンタックスが非表示にされるのを無効化
+let g:vim_markdown_conceal = 0
 " 見出し単位で移動
 autocmd FileType markdown nmap <C-j> <Plug>(Markdown_MoveToNextHeader)
 autocmd FileType markdown nmap <C-k> <Plug>(Markdown_MoveToPreviousHeader)
