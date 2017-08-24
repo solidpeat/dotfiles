@@ -59,6 +59,7 @@ colorscheme molokai
 
 " .mdをmarkdownとして認識させる
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd BufNewFile,BufRead *.apib set filetype=markdown
 " markdown内のコードをハイライト
 let g:markdown_fenced_languages = [
 \  'html',
