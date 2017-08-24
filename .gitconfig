@@ -18,7 +18,8 @@
   blame = diff-highlight | less -x2
 [core]
   editor = vim
-	excludesfile = ~/dotfiles/.gitignore_global
+  excludesfile = ~/dotfiles/.gitignore_global
+  attributesfile = ~/dotfiles/.gitattributes_global
 [push]
   default = simple
 [merge]
@@ -26,3 +27,6 @@
   ff = false
 [pull]
   ff = only
+[diff "xlsx"]
+  binary = true
+  textconv = $GOPATH/bin/git-xlsx-textconv
