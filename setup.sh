@@ -38,9 +38,8 @@ if ! enabled brew; then
 fi
 
 # brew install
-brew install rcmdnk/file/brew-file
-dotalias .brewfile
-brew file install
+cd $DOTFILESDIR/.brewfile
+brew bundle
 
 # エイリアス作成
 dotalias .vim

@@ -1,77 +1,79 @@
-tap homebrew/core
+tap 'homebrew/core'
+tap 'homebrew/php'
+tap 'homebrew/versions'
+tap 'sanemat/font'
+
 # core
-brew vim --with-luajit
-brew zsh --disable-etcdir
-brew tmux
+brew 'vim', args: ['with-luajit']
+brew 'zsh', args: ['without-etcdir']
+brew 'tmux'
 # develop
-brew mono
-brew mysql
+brew 'mono'
+brew 'mysql'
 # git
-brew git
-brew hub
-brew tig
-brew git-flow
-brew gibo
-brew mercurial
+brew 'git'
+brew 'hub'
+brew 'tig'
+brew 'git-flow'
+brew 'gibo'
+brew 'mercurial'
 # util
-brew mackup
-brew tree
-brew jq
-brew plantuml
-brew reattach-to-user-namespace
-brew re2c # phpenvのため
+brew 'mackup'
+brew 'tree'
+brew 'jq'
+brew 'plantuml'
+brew 'reattach-to-user-namespace'
+brew 're2c' # phpenvのため
+# php
+brew 'homebrew/php/composer'
+brew 'homebrew/php/wp-cli'
+brew 'homebrew/versions/bison27' # phpenvのため
 
-tap caskroom/cask
+
+# tap 'caskroom/cask'
+# tap 'caskroom/versions' # いらんかも？
+# tap 'caskroom/fonts' # いらんかも？
+cask_args appdir: '/Applications'
 # core
-cask iterm2
-cask google-chrome
+cask 'iterm2'
+cask 'google-chrome'
+# cask 'firefox-ja'
+# cask 'thunderbird-ja'
 # develop
-cask java # デフォルトで入ってない？android-sdkを使うために必要
-cask mamp
-cask rdm
-cask sequel-pro
+cask 'java' # デフォルトで入ってない？android-sdkを使うために必要
+cask 'mamp'
+cask 'rdm'
+cask 'sequel-pro'
 # editor
-cask coda
-cask eclipse-java
-cask visual-studio-code
+cask 'coda'
+cask 'eclipse-java'
+cask 'visual-studio-code'
 # virtual environment
-cask virtualbox
-cask vagrant
+cask 'virtualbox'
+cask 'vagrant'
 # util
-cask dropbox
-cask evernote
-cask skype
-cask skitch
-cask clipmenu
-cask notational-velocity
-cask appcleaner
-cask qlmarkdown
-cask xquartz # for ricty
+cask 'dropbox'
+cask 'evernote'
+cask 'skype'
+cask 'skitch'
+cask 'clipmenu'
+cask 'notational-velocity'
+cask 'appcleaner'
+cask 'qlmarkdown'
+cask 'xquartz' # for ricty
 
-tap caskroom/versions
-cask firefox-ja
-cask thunderbird-ja
+# font
+brew 'sanemat/font/ricty', args: ['powerline']
+# cask 'font-source-code-pro'
 
-tap caskroom/fonts
-cask font-source-code-pro
-
-tap homebrew/php
-brew composer
-brew wp-cli
-
-tap homebrew/versions
-brew bison27 # phpenvのため
-
-tap sanemat/font
-brew ricty --powerline
-
-tap aspnet/dnx
-brew dnvm
 
 # App Store applications
-appstore 1024640650 CotEditor
-appstore 409183694 Keynote
-appstore 539883307 LINE
-appstore 409201541 Pages
-appstore 407963104 Pixelmator
-appstore 692867256 Simplenote
+# mas 'Xcode', id: 497799835
+# mas 'CotEditor', id: 1024640650
+# mas 'Pixelmator', id: 407963104
+# mas 'LINE', id: 539883307
+# mas 'Pages', id: 409201541
+# mas 'Numbers', id: 409203825
+# mas 'Keynote', id: 409183694
+# mas 'GarageBand', id: 682658836
+# mas 'iMovie', id: 408981434
