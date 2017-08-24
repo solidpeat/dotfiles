@@ -28,7 +28,7 @@ brew 'httpie'
 # php
 brew 'homebrew/php/composer'
 brew 'homebrew/php/wp-cli'
-brew 'homebrew/versions/bison27' # phpenvのため
+brew 'bison@2.7' # phpenvのため
 
 
 # tap 'caskroom/cask'
