@@ -56,6 +56,12 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'aklt/plantuml-syntax'
 " AppleScriptのsyntax highlight
 NeoBundle 'vim-scripts/applescript.vim'
+" TypeScriptのsyntax highlight
+NeoBundleLazy 'leafgarland/typescript-vim', {
+\   'autoload': {
+\     'filetypes': ['typescript']
+\   }
+\ }
 " 日本語ドキュメント
 NeoBundle 'vim-jp/vimdoc-ja'
 " IntelliSense
