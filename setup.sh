@@ -52,6 +52,7 @@ dotalias .composer
 dotalias .editorconfig
 dotalias .mackup
 dotalias .mackup.cfg
+dotalias .ctags
 # diff-highlightへのシンボリックリンク
 ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin
 # anyenvインストール
