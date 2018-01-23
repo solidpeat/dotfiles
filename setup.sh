@@ -57,3 +57,5 @@ dotalias .ctags
 ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin
 # anyenvインストール
 git clone https://github.com/riywo/anyenv $HOME/.anyenv
+anyenv install ndenv
+anyenv install phpenv
