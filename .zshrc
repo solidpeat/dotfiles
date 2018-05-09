@@ -63,3 +63,8 @@ PROMPT="
 # MacOSX - Macのターミナルからunityを起動する - Qiita
 # http://qiita.com/kesera/items/67169850d3e58f0e3d40
 alias unity='/Applications/Unity/Unity.app/Contents/MacOS/Unity -projectPath "`pwd`" &'
+
+# カレントディレクトリ以下の.DS_Storeを削除
+# Macの.DS_Storeを一括削除する
+# https://qiita.com/1000ch/items/045efa284224a4899d77
+alias rmdsstore="find . -name '.DS_Store' -type f -ls -delete"
