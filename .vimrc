@@ -107,6 +107,14 @@ if executable('jq')
   endfunction
   command! -nargs=? Jq  call s:jq(<f-args>)
 endif
+" 上記のやつとかいろいろググってphpのunserialize関数を実行するやつ作った
+" 1行目に全部入ってないとだめ
+if executable('php')
+  function! s:unserialize()
+    execute '%!php -r "var_dump(unserialize(trim(fgets(STDIN))));"'
+  endfunction
+  command! Unserialize call s:unserialize()
+endif
 
 " --------------------------------------------------
 " 移動
