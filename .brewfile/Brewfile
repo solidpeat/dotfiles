@@ -25,6 +25,7 @@ brew 'plantuml'
 brew 'reattach-to-user-namespace'
 brew 're2c' # phpenvのため
 brew 'httpie'
+brew 'watchman'
 # php
 brew 'homebrew/php/composer'
 brew 'homebrew/php/wp-cli'
