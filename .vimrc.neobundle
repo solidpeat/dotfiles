@@ -62,6 +62,8 @@ NeoBundleLazy 'leafgarland/typescript-vim', {
 \     'filetypes': ['typescript']
 \   }
 \ }
+" GraphQLのsyntax highlight
+NeoBundle 'jparise/vim-graphql'
 " 日本語ドキュメント
 NeoBundle 'vim-jp/vimdoc-ja'
 " IntelliSense
