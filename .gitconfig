@@ -22,6 +22,7 @@
   editor = vim
   excludesfile = ~/dotfiles/.gitignore_global
   attributesfile = ~/dotfiles/.gitattributes_global
+  quotepath = false
 [push]
   default = simple
 [merge]
