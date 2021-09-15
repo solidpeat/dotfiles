@@ -5,11 +5,11 @@
   ui = auto
 [alias]
   st = status -sb
-  lg = log --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %C(green)%ci(%cr)%Creset %C(blue bold)<%cn>%Creset%n%n%w(80, 2)%C(white reverse)%s%Creset%n%n%w(80, 2, 2)%b'
-  lgl = log --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %C(green)%ci(%cr)%Creset %C(blue bold)<%cn>%Creset%n%n%w(80, 2)%C(white reverse)%s%Creset%n%n%w(80, 2, 2)%b' --name-status
-  lgs = log --pretty=format:'%C(yellow reverse)%h%Creset -%C(red)%d%Creset %s %C(green)%ci(%cr)%Creset %C(blue bold)<%cn>%Creset'
+  lg = log -i --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %C(green)%ci(%cr)%Creset %C(blue bold)<%an>%Creset%n%n%w(120, 2)%C(white reverse)%s%Creset%n%n%w(120, 2, 2)%b'
+  lgl = log -i --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %C(green)%ci(%cr)%Creset %C(blue bold)<%an>%Creset%n%n%w(120, 2)%C(white reverse)%s%Creset%n%n%w(120, 2, 2)%b' --name-status
+  lgs = log -i --pretty=format:'%C(yellow reverse)%h%Creset -%C(red)%d%Creset %s %C(green)%ci(%cr)%Creset %C(blue bold)<%an>%Creset'
   ls = ls-files
-  shows = show --stat
+  shows = show --stat-width=800
   diffc = diff --cached
   delete-merged-branches = !git branch --merged | grep -vE '\\*|master|develop' | xargs git branch -d
 [pager]
