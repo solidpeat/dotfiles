@@ -132,9 +132,10 @@ let g:syntastic_auto_loc_list = 1
 " エラーがあるとエラー箇所へカーソル移動
 let g:syntastic_auto_jump = 1
 " Javaのエラーは無視（importのとこでエラーがいっぱい出る）
-let g:syntastic_ignore_files = ['\m\c\.java$']
+let g:syntastic_ignore_files = ['\m\c\.html$', '\m\c\.htm$', '\m\c\.php$', '\m\c\.phtml$', '\m\c\.cs$', '\m\c\.sass$', '\m\c\.scss$']
 " PHPの文法チェック
-let g:syntastic_php_checkers = ["php"]
+let g:syntastic_php_checkers = ['phpcs', 'phpmd']
+let g:syntastic_php_phpcs_args = '--standard=psr2'
 
 " TweetVim
 " -------------------------
