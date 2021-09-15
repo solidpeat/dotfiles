@@ -37,7 +37,7 @@ indent_size = 2
 
 [*.html]
 indent_style = space
-indent_size = 4
+indent_size = 2
 
 [*.py]
 indent_style = space
@@ -49,7 +49,7 @@ indent_size = 2
 
 [package.json]
 indent_style = space
-indent_size = 2
+indent_size = 4
 
 [composer.json]
 indent_style = space
