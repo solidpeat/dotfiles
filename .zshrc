@@ -53,6 +53,13 @@ if [ -d ${HOME}/.anyenv ]; then
 fi
 # Go用
 export GOPATH="$HOME/.go"
+export PATH="$PATH:$GOPATH/bin"
+# Haskell用？stack用？
+export PATH="$PATH:$HOME/.local/bin"
+# homebrewでインストールしたbison用
+export PATH="/usr/local/opt/bison/bin:$PATH"
+# homebrewでインストールしたmysql5.7用
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # --------------------------------------------------
 # プロンプト
