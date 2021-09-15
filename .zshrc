@@ -18,6 +18,9 @@ export PATH="/usr/local/sbin:$PATH"
 if [ -f ~/dotfiles/.zshrc.brew.github.api.token ]; then
   source ~/dotfiles/.zshrc.brew.github.api.token
 fi
+# tmuxinator用
+export EDITOR='vim'
+export DISABLE_AUTO_TITLE=true
 # tmux上でmasを実行するためのエイリアス
 if [ "$TMUX" != "" ];then
   alias mas="reattach-to-user-namespace mas"
