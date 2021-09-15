@@ -7,6 +7,7 @@
   st = status -sb
   lg = log -i --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %C(green)%ai(%ar)%Creset %C(blue bold)<%an>%Creset%n%n%w(120, 2)%C(white reverse)%s%Creset%n%n%w(120, 2, 2)%b'
   lgl = log -i --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %C(green)%ai(%ar)%Creset %C(blue bold)<%an>%Creset%n%n%w(120, 2)%C(white reverse)%s%Creset%n%n%w(120, 2, 2)%b' --name-status
+  lgll = log -i --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset%n%C(green)%ai(%ar)%Creset %C(blue bold)<%an>%Creset%n%C(green)%ci(%cr)%Creset %C(blue bold)<%cn>%Creset%n%n%w(120, 2)%C(white reverse)%s%Creset%n%n%w(120, 2, 2)%b' --name-status
   lgs = log -i --pretty=format:'%C(yellow reverse)%h%Creset -%C(red)%d%Creset %s %C(green)%ai(%ar)%Creset %C(blue bold)<%an>%Creset'
   ls = ls-files
   shows = show --stat-width=800
