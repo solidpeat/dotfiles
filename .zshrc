@@ -29,6 +29,10 @@ fi
 export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
 # alias vim=Vim
 alias vi=vim
+# colordiff用
+if [[ -x `which colordiff` ]]; then
+  alias diff='colordiff -u'
+fi
 # homebrew-cask用
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Mono用
