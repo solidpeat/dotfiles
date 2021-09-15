@@ -12,6 +12,7 @@
   ls = ls-files
   shows = show --stat-width=800
   diffc = diff --cached
+  diffcsv = diff --word-diff-regex="[^,]+"
   delete-merged-branches = !git branch --merged | grep -vE '\\*|master|develop' | xargs git branch -d
 [pager]
   log = diff-highlight | less -x2
@@ -33,3 +34,5 @@
 [diff "xlsx"]
   binary = true
   textconv = $GOPATH/bin/git-xlsx-textconv
+  #https://qiita.com/shuhei/items/6a18d968051378d7ac1a
+  # apache tikaよりもgit-xlsx-textconvの方がよかった
