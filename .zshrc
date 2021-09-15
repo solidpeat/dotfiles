@@ -27,7 +27,7 @@ if [ "$TMUX" != "" ];then
 fi
 # MacVim-KaoriYa用
 export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
-alias vim=Vim
+# alias vim=Vim
 alias vi=vim
 # homebrew-cask用
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
