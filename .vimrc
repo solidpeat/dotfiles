@@ -74,6 +74,12 @@ let g:markdown_fenced_languages = [
 
 " .applescriptをAppleScriptとして認識させる
 autocmd BufNewFile,BufReadPost *.applescript set filetype=applescript
+" .php_cs.dist
+autocmd BufNewFile,BufReadPost .php_cs.dist set filetype=php
+" .tsx
+autocmd BufNewFile,BufReadPost *.tsx set filetype=typescript
+" .ssh/config
+autocmd BufNewFile,BufReadPost */.ssh/config-* setf sshconfig
 
 " C#のregionで折りたたみ
 " csharp.vim - C# Syntax file : vim online
